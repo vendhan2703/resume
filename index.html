@@ -379,6 +379,16 @@
 
 	<!-- Main -->
 	<script src="js/main.js"></script>
+		<div id = "preloader">
+		<div id = "status">&nbsp;</div>
+	</div>
+ 	 <script src="jquery.js"></script>
+ 	 <script>$(document).ready(function){
+	 	 $(window).on('load', function{
+		  $('#status').fadeOut();
+		  $('#preloader').delay(350).fadeOut('slow');
+	  })
+  });
 
 	</body>
 </html>
